@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // Can also be included with a regular script tag
   var typed = new Typed('.typed', {
-    strings: ["emil<b>ismayilzada</b>", "<b>emlsm</b>.<b>tech</b>"],
+    strings: ["mahir<b>hashimov</b>", "<b>mahir</b>.<b>hashimov</b>"],
     typeSpeed: 40,
     backSpeed: 40,
     backDelay: 4000,

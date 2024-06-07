@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // Can also be included with a regular script tag
+  // Initialize Typed.js
   var typed = new Typed('.typed', {
     strings: ["mahir<b>hashimov</b>", "<b>mahir</b>.<b>hashimov</b>"],
     typeSpeed: 40,
@@ -8,6 +8,7 @@ $(document).ready(function () {
     loop: true
   });
 
+  // Fixed navbar on scroll
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
       $(".navbar").addClass("fixed-top");
@@ -16,8 +17,8 @@ $(document).ready(function () {
     }
   });
 
+  // Smooth scrolling
   const speed = 500;
-
   $('a[href*="#"]')
     .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
     .unbind('click.smoothScroll')
@@ -31,17 +32,16 @@ $(document).ready(function () {
       }
     });
 
-
   // Portfolio Carousel
   if ($("#portfolio-carousel").length) {
     $("#portfolio-carousel").owlCarousel({
-      loop: false,
-      margin: 10,
-      nav: true,
-      dots: true,
+      loop: false, // Disable looping to avoid duplication
+      margin: 10, // Add margin if needed
+      nav: true, // Enable navigation if needed
+      dots: true, // Enable dots if needed
       smartSpeed: 700,
-      autoplayHoverPause:true,
-      autoplay: false,
+      autoplayHoverPause: true,
+      autoplay: false, // Disable autoplay to avoid automatic cycling
       responsive: {
         0: {
           items: 1
@@ -64,7 +64,8 @@ $(document).ready(function () {
       }
     });
   }
-  // Portfolio Carousel
+
+  // Services Carousel
   if ($("#services-carousel").length) {
     $("#services-carousel").owlCarousel({
       loop: true,
@@ -96,5 +97,4 @@ $(document).ready(function () {
       }
     });
   }
-
-  });
+});

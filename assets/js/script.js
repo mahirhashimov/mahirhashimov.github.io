@@ -35,13 +35,13 @@ $(document).ready(function () {
   // Portfolio Carousel
   if ($("#portfolio-carousel").length) {
     $("#portfolio-carousel").owlCarousel({
-      loop: true,
-      margin: 0,
-      nav: false,
-      dots: false,
+      loop: false,
+      margin: 10,
+      nav: true,
+      dots: true,
       smartSpeed: 700,
       autoplayHoverPause:true,
-      autoplay: 3000,
+      autoplay: false,
       responsive: {
         0: {
           items: 1

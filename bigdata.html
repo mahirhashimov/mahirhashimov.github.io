@@ -462,7 +462,7 @@
   <p></p>
   <p></p>
 
-  <h3>Task 3: Writing Good Code and Documentation</h3>
+  <h3>Task 3: Writing Good Code and Documentation - Unit 4</h3>
 
 <h4>Objective:</h4>
 <p>This task's goal was to use the best practices for writing code to create a comprehensive script that included documentation for preprocessing and data cleaning on a dataset that was derived from UNICEF survey data.</p>
@@ -524,7 +524,7 @@
 <p></p>
 
   
-<h3>Task 4: Data Normalization</h3>
+<h3>Task 4: Data Normalization - UNIT 7</h3>
 
 <h4>Objective:</h4>
 <p>This work aimed to ensure data integrity and remove duplication by normalising  (Diène et al., 2020) a dataset from an unnormalized form to the Third Normal Form (3NF).</p>
@@ -593,7 +593,7 @@
 </ol>
 
 <h4>Conclusion:</h4>
-<p>The normalization process successfully transformed the dataset into a well-structured set of tables in 3NF, eliminating redundancy and ensuring data integrity. Despite challenges, the systematic approach highlighted the importance of data cleaning, entity identification, and dependency removal. This process enhances data storage efficiency and facilitates more accurate and efficient data retrieval.</p>
+<p>The dataset was effectively normalised, removing duplication and guaranteeing data integrity, resulting in a collection of well-structured tables in 3NF. Notwithstanding difficulties, the methodical approach made clear how crucial it is to remove dependencies, identify entities, and clean up data. This procedure improves the accuracy and efficiency of data retrieval while also increasing the efficiency of data storage.</p>
 
   
 <p></p>
@@ -608,11 +608,89 @@
 <p></p>
 
 
+<h3>Task 5: Data Build Task</h3>
+
+<h4>Objective:</h4>
+<p>Building a relational database system with linked tables, proving that you understood primary and secondary keys, and guaranteeing referential integrity were the goals of this work.</p>
 
 
+<table border="1" cellpadding="10" cellspacing="0">
+    <caption>Table 9: Steps and Outcomes of Data Build Task</caption>
+    <thead>
+        <tr>
+            <th>Step</th>
+            <th>Description</th>
+            <th>Process</th>
+            <th>Outcome</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Designing the Database Schema</td>
+            <td>Analyzed the provided data to identify necessary tables and relationships.</td>
+            <td>Identified primary tables (Students, Courses, ExamBoards, Teachers) and junction tables for many-to-many relationships.</td>
+            <td>Created a detailed schema plan with primary and foreign keys for each table.</td>
+        </tr>
+        <tr>
+            <td>Creating the Database</td>
+            <td>Wrote a comprehensive SQL script to create the tables with appropriate primary and foreign keys.</td>
+            <td>Included the creation of junction tables to manage many-to-many relationships and ensure referential integrity.</td>
+            <td>Successfully created database schema with tables and relationships defined.</td>
+        </tr>
+        <tr>
+            <td>Populating the Database</td>
+            <td>Used SQL INSERT statements to populate the tables with the provided data.</td>
+            <td>Added records for students, courses, exam boards, and teachers, establishing relationships in junction tables.</td>
+            <td>Database populated with accurate data reflecting the original unnormalized dataset.</td>
+        </tr>
+        <tr>
+            <td>Testing the Database</td>
+            <td>Used SQL SELECT queries to verify relationships and data integrity.</td>
+            <td>Joined tables to verify relationships between students, their courses, exam boards, and teachers.</td>
+            <td>Ensured data was correctly inserted and referential integrity was maintained.</td>
+        </tr>
+    </tbody>
+</table>
 
 
+<h4>Critical Analysis:</h4>
 
+<table border="1" cellpadding="10" cellspacing="0">
+    <caption>Table 10: Critical Analysis of Data Build Task</caption>
+    <thead>
+        <tr>
+            <th>Aspect</th>
+            <th>Analysis</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Methodology and Tools</td>
+            <td>SQLite was suitable due to its simplicity and ease of use for small to medium-sized databases. Breaking down the task into schema design, data insertion, and testing proved effective. (Gaffney et al., 2022)</td>
+        </tr>
+        <tr>
+            <td>Normalization and Integrity</td>
+            <td>Fully normalized schema helped avoid data redundancy and ensured data integrity. Foreign key constraints reinforced the relationships between tables.  (Amato, xxxx)</td>
+        </tr>
+        <tr>
+            <td>Efficiency and Error Handling</td>
+            <td>The process was efficient, though initial environment issues highlighted the importance of correct tool selection. Adding scripts to drop existing tables before creation handled errors and ensured a clean slate.</td>
+        </tr>
+        <tr>
+            <td>Scalability Considerations</td>
+            <td>The current system is adequate for the provided data but might need migration to more robust systems like PostgreSQL or MySQL for larger datasets.</td>
+        </tr>
+    </tbody>
+</table>
+
+  <p></p>
+  <p></p>
+
+<a href="assets/code/data-build-task-python.jpg" target="_blank" class="btn btn-primary btn-custom">Python code</a>
+           <a href="assets/pdf/Report-on Data-Build-Task.pdf" target="_blank" class="btn btn-primary btn-custom">Report: Data Build Task</a>
+
+  <p></p>
+  <p></p>
 
 
 
@@ -771,22 +849,7 @@
 
 
       <h2>Tasks</h2>
-<h2>Normalisation Task</h2>
-<p>For the normalization task, we took an un-normalised table and transformed it into 1NF, 2NF, and 3NF, demonstrating each step. The Python code and detailed report explaining the process are available in the following link:</p>
 
-
-           <a href="assets/excel/DBD_PCOM7E_Table.xlsx" target="_blank" class="btn btn-primary btn-custom">Table</a>
-           <a href="assets/code/Normalisation-task-python.jpg" target="_blank" class="btn btn-primary btn-custom">Python code</a>
-           <a href="assets/pdf/data-normalization.pdf" target="_blank" class="btn btn-primary btn-custom">Report: Data Normalization</a>
-      <p>     </p>
-      
-<h2>Data Build Task</h2>
-<p>Following the normalization task, we built a relational database system with linked tables, demonstrating knowledge of primary and foreign keys. We tested the database to ensure referential integrity. The Python code and report explaining this task are available in the following link:</p>
-
-  <a href="assets/code/data-build-task-python.jpg" target="_blank" class="btn btn-primary btn-custom">Python code</a>
-           <a href="assets/pdf/Report-on Data-Build-Task.pdf" target="_blank" class="btn btn-primary btn-custom">Report: Data Build Task</a>
-
-           <p>     </p>
       
 <h2>SQL and Normalisation Activities</h2>
 <p>During this week's seminar, we reviewed the SQL website and discussed SQL features to incorporate into our database builds. We also discussed the database design and normalization tasks completed this week.</p>

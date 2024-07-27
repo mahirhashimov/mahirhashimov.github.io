@@ -62,7 +62,7 @@
 <body>
   <div class="sidebar">
     <a href="#unit1"><h1>Collaborative Discussion Forum Summaries</a>
-    <a href="#unit2">Unit 2</a>
+    <a href="#unit2">Outcomes from the Team Exercises</a>
     <a href="#unit3">Unit 3</a>
     <a href="#unit4">Unit 4</a>
     <a href="#unit5">Unit 5</a>
@@ -96,41 +96,100 @@ We also talked about the tough rules enacted by the GDPR and ICO to protect pers
       <a href="assets/pdf/big-data-summary-post-2.pdf" target="_blank" class="btn btn-primary btn-custom">Collaboration Discussion 2 - Summary Post</a>
 
     </div>
+
+
+
+
+
+
+
+
     
         <div class="unit" id="unit2">
 
+      <?php
+
+echo "<h1>Outcomes from Team Exercises</h1>";
+echo "<p>Our team engaged in exercises to critically analyze data wrangling problems and apply appropriate methodologies, tools, and techniques. We developed solutions for processing datasets and solving complex problems in various environments, honing the skills required to be effective team members in a virtual professional environment.</p>";
+
+echo "<h2>Team Exercise 1: Database Design for ABC Electronics</h2>";
+echo "<h3>Summary:</h3>";
+echo "<p>In the first exercise, we designed a logical database for ABC Electronics to enhance data management and streamline processes. The project involved defining entities, attributes, relationships, data types, and formats, choosing a suitable DBMS, and implementing a data management pipeline.</p>";
+
+echo "<table border='1'>";
+echo "<tr><th>Aspect</th><th>Details</th></tr>";
+
+$data = [
+    [
+        'aspect' => 'Logical Design',
+        'details' => 'Defined entities, attributes, and relationships in a relational database model.'
+    ],
+    [
+        'aspect' => 'Database Management System',
+        'details' => 'Chose MySQL for its scalability, performance, security, and cost-effectiveness.'
+    ],
+    [
+        'aspect' => 'Data Management Pipeline',
+        'details' => 'Captured data from various sources, used ETL processes, and implemented data cleaning techniques.'
+    ],
+    [
+        'aspect' => 'Data Cleaning Techniques',
+        'details' => 'Data validation, managing missing values, eliminating duplicates, standardization, and normalization.'
+    ],
+    [
+        'aspect' => 'Tools and Methodologies',
+        'details' => 'Utilized Python libraries (Pandas, NumPy), SQL queries, Tableau, and ETL tools (Talend, Apache NiFi).'
+    ]
+];
+
+foreach ($data as $row) {
+    echo "<tr><td>{$row['aspect']}</td><td>{$row['details']}</td></tr>";
+}
+
+echo "</table>";
+?>
+
+<?php
+
+echo "<h2>Team Exercise 2: DreamHome Property Management Case Study</h2>";
+echo "<h3>Summary:</h3>";
+echo "<p>The second exercise focused on the initial phases of the Database Development Lifecycle (DSDLC) for DreamHome Property Management. We applied fact-finding techniques, established user needs, and documented the lifecycle stages to ensure a clear and comprehensive approach for developing an effective database system.</p>";
+
+echo "<table border='1'>";
+echo "<tr><th>Aspect</th><th>Details</th></tr>";
+
+$data = [
+    [
+        'aspect' => 'Database Development Lifecycle (DSDLC)',
+        'details' => 'Followed structured steps: planning, system definition, requirements collection, design, application design, DBMS selection, implementation, data conversion, testing, and maintenance.'
+    ],
+    [
+        'aspect' => 'Fact-Finding Techniques',
+        'details' => 'Employed techniques like documentation analysis, interviews, observations, research, and questionnaires to gather precise and comprehensive information.'
+    ],
+    [
+        'aspect' => 'Database Requirements',
+        'details' => 'Defined data and transaction requirements for Branch and Staff user views, ensuring support for DreamHome\'s operations.'
+    ],
+    [
+        'aspect' => 'Documentation',
+        'details' => 'Produced mission statements, system definition documents, and requirements specifications to guide the development process and ensure user needs are met.'
+    ]
+];
+
+foreach ($data as $row) {
+    echo "<tr><td>{$row['aspect']}</td><td>{$row['details']}</td></tr>";
+}
+
+echo "</table>";
+?>
 
 
+<h2>Reflection on Team Dynamics and Skills Development</h2>
+<p>Initially, I was under a lot of strain because I was the one doing the most of the draughting during the project due to the team members' minimal involvement. Early and regular participation is essential, as demonstrated by Robert and Funmilayo's superior end product despite their tardy contributions. Proactive communication and fair responsibility sharing are crucial, as this example has shown. It focused on the importance of cooperation and leadership in a remote work environment, while also improving my abilities in time management, critical thinking, communication, and problem-solving. In light of this, I've discovered that in order to guarantee equitable contributions, I need promote early participation.
+</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        <h1>Unit 2</h1>
-
-         <h2>Introduction to Data Types and Formats</h2>
-         
-           <p>In Unit 2 of the module "Introduction to Data Types and Formats," we delved into various data types and formats and their implications for data storage and manipulation. This unit emphasized the importance of understanding different data structures and how to effectively parse and manage data using Python.</p>
-
-<h2>Key Learning Outcomes</h2>
-
-<ol>
-    <li>
-        <span class="section-title">Understanding Data Formats and Representations:</span>
-        <ul>
-            <li>Recognizing different data formats (CSV, JSON, XML) and their specific use cases.</li>
-            <li>Exploring data types in various programming languages, with a particular focus on Python.</li>
-        </ul>
+    
     </li>
     <li>
         <span class="section-title">Application of Data Formats and Types:</span>

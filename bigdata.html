@@ -516,26 +516,96 @@
 <h4>Conclusion:</h4>
 <p>The data cleaning and preprocessing task was successfully completed, resulting in a cleaned dataset ready for further analysis. The systematic approach ensured accurate processing, with challenges effectively managed through appropriate technical solutions. This task highlights the importance of meticulous data cleaning practices in data analysis, laying a strong foundation for reliable and insightful results.</p>
 
-
+<p></p>
+<p></p>
      <a href="assets/code/big-data-data-cleaning-2.jpg" target="_blank" class="btn btn-primary btn-custom">Python code for Task 3</a>
         <a href="assets/pdf/Report%20on%20Data%20Cleaning%20and%20Processing%20Task%20-%20Documenting%20the%20Example.pdf" target="_blank" class="btn btn-primary btn-custom">Report: Documenting the Example</a>
+<p></p>
+<p></p>
 
   
+<h3>Task 4: Data Normalization</h3>
+
+<h4>Objective:</h4>
+<p>This work aimed to ensure data integrity and remove duplication by normalising  (Diène et al., 2020) a dataset from an unnormalized form to the Third Normal Form (3NF).</p>
+
+<table border="1" cellpadding="10" cellspacing="0">
+    <h4>Table 8: Steps and Outcomes of Data Normalization</h4>
+
+    <thead>
+        <tr>
+            <th>Step</th>
+            <th>Description</th>
+            <th>Process</th>
+            <th>Outcome</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Unnormalized Data (UNF)</td>
+            <td>Initial dataset with anomalies</td>
+            <td>Data included student details, exam scores, course names, exam boards, and teacher names</td>
+            <td>Identified missing values and duplicate rows</td>
+        </tr>
+        <tr>
+            <td>First Normal Form (1NF)</td>
+            <td>Ensure atomic values and unique records</td>
+            <td>- Remove empty rows <br> - Forward-fill missing values</td>
+            <td>Structured data with atomic values and unique records</td>
+        </tr>
+        <tr>
+            <td>Second Normal Form (2NF)</td>
+            <td>Remove partial dependencies</td>
+            <td>- Identify primary entities: Students, Courses, Teachers <br> - Create separate tables for each entity <br> - Merge tables to form a composite table</td>
+            <td>Removed partial dependencies, ensuring non-key attributes are fully dependent on the primary key</td>
+        </tr>
+        <tr>
+            <td>Third Normal Form (3NF)</td>
+            <td>Remove transitive dependencies</td>
+            <td>- Identify transitive dependencies <br> - Create Exam Scores Table</td>
+            <td>Eliminated transitive dependencies, resulting in well-structured tables with non-key attributes dependent only on the primary key</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Critical Analysis:</h4>
+<ol>
+    <li><strong>Data Cleaning:</strong>
+        <ul>
+            <li>Essential to eliminate duplicated and incomplete records, forming the foundation for further normalization.</li>
+        </ul>
+    </li>
+    <li><strong>Entity Identification:</strong>
+        <ul>
+            <li>Crucial for structuring the database around logical entities, a core principle of database normalization.</li>
+        </ul>
+    </li>
+    <li><strong>Dependency Removal:</strong>
+        <ul>
+            <li>Vital for efficient querying and updates, reducing data anomalies and redundancy.</li>
+        </ul>
+    </li>
+    <li><strong>Practical Considerations:</strong>
+        <ul>
+            <li>Balance between normalization and query performance to manage complexity in database queries due to joining multiple tables.</li>
+        </ul>
+    </li>
+</ol>
+
+<h4>Conclusion:</h4>
+<p>The normalization process successfully transformed the dataset into a well-structured set of tables in 3NF, eliminating redundancy and ensuring data integrity. Despite challenges, the systematic approach highlighted the importance of data cleaning, entity identification, and dependency removal. This process enhances data storage efficiency and facilitates more accurate and efficient data retrieval.</p>
 
   
+<p></p>
+<p></p>
+
+           <a href="assets/excel/DBD_PCOM7E_Table.xlsx" target="_blank" class="btn btn-primary btn-custom">Table</a>
+           <a href="assets/code/Normalisation-task-python.jpg" target="_blank" class="btn btn-primary btn-custom">Python code</a>
+           <a href="assets/pdf/data-normalization.pdf" target="_blank" class="btn btn-primary btn-custom">Report: Data Normalization</a>
 
 
-
-
-
-
-
-
-
-
-
-
-
+<p></p>
+<p></p>
 
 
 
@@ -569,65 +639,6 @@
         
     <div class="unit" id="unit4">
       <h1>Unit 4</h1>
-      <h2> Data Cleaning and Transformation</h2>
-
-     <p>In Unit 4, "Data Cleaning and Transformation," we explored various concepts, techniques, and methods essential for cleaning and transforming data. This unit emphasized the importance of understanding the data management pipeline, evaluating factors affecting data cleaning, and the requirements critical for data design and process automation.</p>
-
-<h2>Key Learning Outcomes</h2>
-
-<ol>
-    <li>
-        <span class="section-title">Data Cleaning and Transformation:</span>
-        <ul>
-            <li>Examine and apply data cleaning and transformation concepts.</li>
-            <li>Understand and implement the data management pipeline.</li>
-            <li>Evaluate factors affecting data cleaning.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Design and Process Automation:</span>
-        <ul>
-            <li>Understand the requirements for design automation.</li>
-            <li>Compile and document Python scripts for data cleaning and transformation.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Practical Application:</span>
-        <ul>
-            <li>Compile data sets and convert data into different formats.</li>
-            <li>Perform practical data cleaning tasks using Python.</li>
-        </ul>
-    </li>
-</ol>
-
-      <h2>Reading and Study Hours</h2>
-
-<h3>Primary Reading:</h3>
-<ul>
-    <li>
-        <span class="book-title">Sarkar, T. & Roychowdhury, S. (2019) Data Wrangling with Python. 1st ed. Packt.</span>
-        <ul>
-            <li>Chapters 6 and 7: Covered data wrangling secrets, handling outliers, missing data, and advanced web scraping.</li>
-            <li class="time">Time Spent: Approximately 4 hours.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="book-title">Kazil, J & Jarmul, K. (2016) Data Wrangling with Python. O'Reilly Media Inc.</span>
-        <ul>
-            <li>Chapters 6, 7, and 14: Discussed data acquisition, cleanup, and automation.</li>
-            <li class="time">Time Spent: Approximately 5 hours.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="book-title">Huxley et al. (2020) Data Cleaning. Sage Foundation.</span>
-        <ul>
-            <li>Provided insights into best practices for data cleaning.</li>
-            <li class="time">Time Spent: Approximately 1 hours.</li>
-        </ul>
-    </li>
-</ul>
-
-
       
           
         <h2>Data Management Pipeline Test.</h2>
@@ -645,21 +656,6 @@
 
       
         <h2>UNIT EXERCISES</h2>
-
-        <h3>Exercise 1</h3>
-        <p>Follow the instructions on page 150-151 of the Data Wrangling with Python textbook to manually produce data files mn.csv and mn_headers.csv. 
-        Perhaps the simplest approach to saving the cleaned data is to export it to a simple file, and the listed code saved to a new CSV file.</p>
-        <a href="assets/code/big-data-data-cleaning-1.jpg" target="_blank" class="btn btn-primary btn-custom">Python code for Ex. 1</a>
-        <a href="assets/pdf/Report%20on%20Data%20Cleaning%20and%20Processing%20Task.pdf" target="_blank" class="btn btn-primary btn-custom">Report: Data Cleaning</a>
-        
-        <h3>Exercise 2</h3>
-        <p>The textbook continues to apply the rules for writing good code and produces a complete script with documentation. 
-          Study the complete process listed on pages 199-209 of the Data Wrangling with Python textbook.</p>
-   
-
-    </div>
-
-
 
 
 
@@ -757,132 +753,7 @@
     
     </div>
     <div class="unit" id="unit6">
-      <h1>Unit 6</h1>
-       <h2> Database Design and Normalisation</h2>
-
-<p>In Unit 6, "Database Design and Normalisation," we focused on the principles of database design and the importance of normalization in relational databases. This unit emphasized the creation and management of databases, ensuring data integrity and efficient storage.</p>
-
-<h2>Key Learning Outcomes</h2>
-
-<ol>
-    <li>
-        <span class="section-title">Database Construction and Terminology:</span>
-        <ul>
-            <li>Discuss the construction and terminology associated with creating a database.</li>
-            <li>Identify technical terminology used in the construction of a relational database.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Logical and Physical Database Design:</span>
-        <ul>
-            <li>Be familiar with the process involved in creating a logical database design.</li>
-            <li>Evaluate the requirements for creating a physical architecture database design.</li>
-            <li>Analyze and evaluate the requirements and limitations for creating a physical design.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Normalization:</span>
-        <ul>
-            <li>Understand the fundamentals of normalization.</li>
-            <li>Look at the reasoning behind the use of different normal forms.</li>
-        </ul>
-    </li>
-</ol>
-
-<h2>Artifacts and Their Relation to Learning Outcomes</h2>
-
-<h3>Lecturecast and Reading Materials:</h3>
-<ul>
-    <li>Provided insights into how data cleaning methods help with the storage of usable datasets.</li>
-    <li>Explained the creation of databases and the use of key fields to link data.</li>
-    <li>Analyzed anomalies that affect database integrity and the importance of normalization.</li>
-</ul>
-
-<h3>Practical Exercises:</h3>
-<ul>
-    <li>Hands-on activities involving real-life data wrangling tasks, such as fixing UN data, cleaning GDP data, and merging datasets.</li>
-    <li>Exercises on connecting cleaned data to a database and extending data wrangling techniques.</li>
-</ul>
-
-<h2>Reading and Study Hours</h2>
-
-<h3>Primary Reading:</h3>
-<ul>
-    <li>
-        <span class="book-title">Sarkar, T. & Roychowdhury, S. (2019) Data Wrangling with Python. 1st ed. Packt.</span>
-        <ul>
-            <li>Chapter 9: Covered real-life applications of data wrangling and database connections.</li>
-            <li class="time">Time Spent: Approximately 3 hours.</li>
-        </ul>
-    </li>
-</ul>
-
-
       
-          
-        <h2>Development Team Project: Project Report</h2>
-
-<p>In Unit 6, our team undertook a project to design and build a logical database for a chosen application. We acted as software consultants and developers, focusing on the following tasks:</p>
-
-<ul>
-    <li><strong>Logical Design:</strong> Identified data items/entities, their attributes, relationships, and associations.</li>
-    <li><strong>Database Model Proposal:</strong> Proposed a database management system considering the client's requirements for storage, user access, and data manipulation.</li>
-    <li><strong>Data Management Pipeline Evaluation:</strong> Discussed the data capture process, applied data cleaning techniques, and documented the implementation stages.</li>
-</ul>
-
-    
-
-<p>The detailed team report is available in the following link:</p>
-
-      
-
-      <a href="assets/pdf/team-project-report.pdf" target="_blank" class="btn btn-primary btn-custom">Project Report</a>
-   
-
-
-<h2>Tutor Feedback</h2>
-
-<ul>
-    <li><strong>Knowledge and Understanding:</strong> The report shows very good knowledge and understanding of module topics, incorporated within a practical application as required.</li>
-    <li><strong>Application Description:</strong> The application is a hybrid inventory system, which is described thoroughly.</li>
-    <li><strong>Content and Structure:</strong> The content and structure of the report are good, the word count is within limit, and the English language is sound.</li>
-    <li><strong>References:</strong> There are seven references in total listed and cited in the Harvard style.</li>
-    <li><strong>Figures and Diagrams:</strong> The figure in the appendix is core material and should have been included within the main body of the report. Including a diagram showing tables' relationships and associations would have given more clarity.</li>
-    <li><strong>Critical Discussions:</strong> The critical discussions are limited and need to focus more on the application. Discussing the data management pipeline should better relate to the application data rather than merely stating theoretical stages and steps.</li>
-    <li><strong>Critical Evaluation:</strong> The critical evaluation section is limited to data wrangling and lists theoretical concepts without relating them to the practical application.</li>
-    <li><strong>References for Critical Discussions:</strong> Having more references relevant to these topics would have assisted with better critical discussions relating theory to practice.</li>
-    <li><strong>Theory and Practical Implementation:</strong> Overall, the report is theory-focused and requires better attention to linking theory to practical implementation relevant to the case at hand.</li>
-</ul>
-
-
-
-<h2>Feedback on Team Dynamics</h2>
-
-<p>The team performed well, especially in the final stages of the project. Initial engagement was low due to other obligations, but Robert and Funmilayo significantly contributed in the last week, improving overall performance.</p>
-
-<h3>Valuable Behaviors:</h3>
-<ul>
-    <li>Robert's insightful commentary on stock orders, financial transactions, and firm processes made the report more polished and effective.</li>
-    <li>Funmilayo's attention to detail in organizing the introduction and critical assessment section improved the report's clarity and thoroughness.</li>
-</ul>
-
-<h3>Detrimental Behaviors:</h3>
-<ul>
-    <li>I initially felt pressured to oversee the project because Robert and Funmilayo were delayed in their contributions. Their efforts in the last week helped alleviate this issue. Early and consistent engagement is crucial for team cohesiveness.</li>
-</ul>
-
-<p>From this project, I learned the importance of early and frequent communication to ensure agreement and fair assignment of responsibilities. Including diverse viewpoints improves the project's outcome. In future projects, I will encourage proactive participation from all team members from the beginning to avoid last-minute rushes and ensure equal effort.</p>
-
-
-
-
- </div>
-
-
-
-
-
-
 
 
 
@@ -895,69 +766,7 @@
 
     
     <div class="unit" id="unit7">
-      <h1>Unit 7</h1>
- <h2> Constructing Normalised Tables and Database Build</h2>
 
-<p>In Unit 7, "Constructing Normalised Tables and Database Build," we focused on breaking down an un-normalised table into 1NF, 2NF, and 3NF, and using this data to create a relational database. This unit emphasized the importance of normalization in database design and provided practical experience in constructing and testing a relational database.</p>
-
-<h2>Key Learning Outcomes</h2>
-
-<ol>
-    <li>
-        <span class="section-title">Understanding Normalisation:</span>
-        <ul>
-            <li>Transform a flat file database model into a normalized model.</li>
-            <li>Understand and apply the concepts of 1NF, 2NF, and 3NF.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Building and Testing a Relational Database:</span>
-        <ul>
-            <li>Construct a relational database model based on normalized data.</li>
-            <li>Test the database for errors or anomalies to ensure referential integrity.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Identifying Functional Dependencies:</span>
-        <ul>
-            <li>Identify functional dependencies of data items in the dataset.</li>
-            <li>Evaluate constraints and limitations associated with the dataset.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Specifying Data Attributes:</span>
-        <ul>
-            <li>Specify data attributes relevant and critical to using a given dataset.</li>
-        </ul>
-    </li>
-</ol>
-
-<h2>Artifacts and Their Relation to Learning Outcomes</h2>
-
-<h3>Lecturecast and Reading Materials:</h3>
-<ul>
-    <li>Provided insights into data attributes, associations, operations, and relationships.</li>
-    <li>Explained the process of normalizing data and the reasoning behind using different normal forms.</li>
-</ul>
-
-<h3>Practical Exercises:</h3>
-<ul>
-    <li>Hands-on experience with normalizing a dataset to 3NF and constructing a relational database model.</li>
-</ul>
-
-      <h2>Reading and Study Hours</h2>
-
-<h3>Primary Reading:</h3>
-<ul>
-    <li>Letkowski, J. (2015) Doing Database Design with MySQL.</li>
-    <li>IBM Intellas. (2010) What is a Database Management System?</li>
-    <li>Taipalus, T. (2024) Database management system performance comparisons: A systematic literature review.</li>
-    <li>Chen, W. (2023) Database Design and Implementation.
-        <ul>
-            <li class="time">Time Spent: Approximately 4 hours for all articles.</li>
-        </ul>
-    </li>
-</ul>
 
 
 

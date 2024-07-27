@@ -107,44 +107,46 @@ We also talked about the tough rules enacted by the GDPR and ICO to protect pers
     
         <div class="unit" id="unit2">
 
-      <?php
 
-echo "<h1>Outcomes from Team Exercises</h1>";
-echo "<p>Our team engaged in exercises to critically analyze data wrangling problems and apply appropriate methodologies, tools, and techniques. We developed solutions for processing datasets and solving complex problems in various environments, honing the skills required to be effective team members in a virtual professional environment.</p>";
+<h2>Outcomes from Team Exercises</h2>
 
-echo "<h2>Team Exercise 1: Database Design for ABC Electronics</h2>";
-echo "<h3>Summary:</h3>";
-echo "<p>In the first exercise, we designed a logical database for ABC Electronics to enhance data management and streamline processes. The project involved defining entities, attributes, relationships, data types, and formats, choosing a suitable DBMS, and implementing a data management pipeline.</p>";
+<p>Our team engaged in exercises to critically analyze data wrangling problems and apply appropriate methodologies, tools, and techniques. We developed solutions for processing datasets and solving complex problems in various environments, honing the skills required to be effective team members in a virtual professional environment.</p>
 
-echo "<table border='1'>";
-echo "<tr><th>Aspect</th><th>Details</th></tr>";
+<h2>Team Exercise 1: Database Design for ABC Electronics</h2>
 
-$data = [
-    [
-        'aspect' => 'Logical Design',
-        'details' => 'Defined entities, attributes, and relationships in a relational database model.'
-    ],
-    [
-        'aspect' => 'Database Management System',
-        'details' => 'Chose MySQL for its scalability, performance, security, and cost-effectiveness.'
-    ],
-    [
-        'aspect' => 'Data Management Pipeline',
-        'details' => 'Captured data from various sources, used ETL processes, and implemented data cleaning techniques.'
-    ],
-    [
-        'aspect' => 'Data Cleaning Techniques',
-        'details' => 'Data validation, managing missing values, eliminating duplicates, standardization, and normalization.'
-    ],
-    [
-        'aspect' => 'Tools and Methodologies',
-        'details' => 'Utilized Python libraries (Pandas, NumPy), SQL queries, Tableau, and ETL tools (Talend, Apache NiFi).'
-    ]
-];
+<h3>Summary:</h3>
+<p>In the first exercise, we designed a logical database for ABC Electronics to enhance data management and streamline processes. The project involved defining entities, attributes, relationships, data types, and formats, choosing a suitable DBMS, and implementing a data management pipeline.</p>
 
-foreach ($data as $row) {
-    echo "<tr><td>{$row['aspect']}</td><td>{$row['details']}</td></tr>";
-}
+<table>
+    <thead>
+        <tr>
+            <th>Aspect</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Logical Design</td>
+            <td>Defined entities, attributes, and relationships in a relational database model.</td>
+        </tr>
+        <tr>
+            <td>Database Management System</td>
+            <td>Chose MySQL for its scalability, performance, security, and cost-effectiveness.</td>
+        </tr>
+        <tr>
+            <td>Data Management Pipeline</td>
+            <td>Captured data from various sources, used ETL processes, and implemented data cleaning techniques.</td>
+        </tr>
+        <tr>
+            <td>Data Cleaning Techniques</td>
+            <td>Data validation, managing missing values, eliminating duplicates, standardization, and normalization.</td>
+        </tr>
+        <tr>
+            <td>Tools and Methodologies</td>
+            <td>Utilized Python libraries (Pandas, NumPy), SQL queries, Tableau, and ETL tools (Talend, Apache NiFi).</td>
+        </tr>
+    </tbody>
+</table>
 
 echo "</table>";
 ?>

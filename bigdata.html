@@ -255,7 +255,7 @@
           <p></p>
           <p></p>
 
-<h2>Team Exercise 2: DreamHome Property Management Case Study - Unit 8</h2>
+<h2>Team Exercise 2: DreamHome Property Management Case Study - Unit 8 & Unit 9</h2>
 
 <h3>Summary:</h3>
 <p>The first stages of DreamHome Property Management's Database Development Lifecycle (DSDLC) were the subject of the second exercise. We used fact-finding methods, determined user requirements, and recorded the lifecycle phases to guarantee a methodical and thorough approach to creating a successful database system.</p>
@@ -323,6 +323,7 @@
 <p></p>
 
                 <a href="assets/pdf/big-data-dreamHome.pdf" target="_blank" class="btn btn-primary btn-custom">DreamHome Case</a>
+           <a href="assets/code/dreamhome.sql" target="_blank" class="btn btn-primary btn-custom">DreamHome SQL</a>
 <p></p>
 <p></p>
 
@@ -615,7 +616,7 @@
 
 
 <table border="1" cellpadding="10" cellspacing="0">
-    <caption>Table 9: Steps and Outcomes of Data Build Task</caption>
+    <h4>Table 9: Steps and Outcomes of Data Build Task</h4>
     <thead>
         <tr>
             <th>Step</th>
@@ -656,7 +657,7 @@
 <h4>Critical Analysis:</h4>
 
 <table border="1" cellpadding="10" cellspacing="0">
-    <caption>Table 10: Critical Analysis of Data Build Task</caption>
+    <h4>Table 10: Critical Analysis of Data Build Task</h4>
     <thead>
         <tr>
             <th>Aspect</th>
@@ -693,6 +694,87 @@
   <p></p>
 
 
+<h3>Task 6: Security Requirements Specification for API UNIT 10</h3>
+
+<h4>Objective:</h4>
+<p>This task's goal was to assess an API's security needs in order to provide data sharing, scraping, and networking between a Python application and data management systems that support XML, JSON, and SQL. Reducing the likelihood of data breaches, illegal access, and problems with data integrity is the aim.<p>
+
+<h4>Steps Taken:</h4>
+
+<table border="1" cellpadding="10" cellspacing="0">
+      <h4>Table 11: Security Requirements for API</h4>
+
+    <thead>
+        <tr>
+            <th>Step</th>
+            <th>Description</th>
+            <th>Process</th>
+            <th>Outcome</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Authentication and Authorization</td>
+            <td>Ensuring that only authorized users can access the API.</td>
+            <td>Implemented secure authentication methods like JWT and OAuth 2.0. Used role-based access control (RBAC).</td>
+            <td>API access restricted to authenticated and authorized users.</td>
+        </tr>
+        <tr>
+            <td>Data Transmission Security</td>
+            <td>Protecting data in transit between the client and server.</td>
+            <td>Used Transport Layer Security (TLS) and HTTPS for all API endpoints. Implemented strong encryption standards like AES-256 and TLS 1.2 or higher.</td>
+            <td>Ensured data confidentiality and security during transmission.</td>
+        </tr>
+        <tr>
+            <td>Data Integrity</td>
+            <td>Ensuring the validity and unaltered state of data transferred via the API.</td>
+            <td>Implemented strict input validation to prevent injection attacks. Used checksums or hashes (e.g., SHA-256) for data verification.</td>
+            <td>Maintained data integrity and protected against injection attacks.</td>
+        </tr>
+        <tr>
+            <td>Data Storage Security</td>
+            <td>Protecting sensitive data stored in databases.</td>
+            <td>Implemented robust encryption techniques and database access controls. Applied the principle of least privilege for data access.</td>
+            <td>Ensured data security and confidentiality during storage.</td>
+        </tr>
+        <tr>
+            <td>Input and Output Handling</td>
+            <td>Preventing security flaws related to data input and output.</td>
+            <td>Sanitized all inputs to avoid injection attacks. Used output encoding to prevent cross-site scripting (XSS) attacks.</td>
+            <td>Secured data handling and prevented malicious data processing.</td>
+        </tr>
+        <tr>
+            <td>API Rate Limiting and Throttling</td>
+            <td>Protecting the API from misuse and denial-of-service (DoS) attacks.</td>
+            <td>Implemented rate limiting and throttling techniques based on usage patterns.</td>
+            <td>Maintained API performance and availability under high load conditions.</td>
+        </tr>
+        <tr>
+            <td>Logging and Monitoring</td>
+            <td>Identifying and addressing security events.</td>
+            <td>Implemented comprehensive logging and real-time monitoring with intrusion detection systems (IDS) and security information and event management (SIEM).</td>
+            <td>Enabled effective monitoring and analysis of API activities.</td>
+        </tr>
+        <tr>
+            <td>Vulnerability Management</td>
+            <td>Managing and mitigating security vulnerabilities.</td>
+            <td>Conducted regular security audits and vulnerability assessments. Ensured timely application of security updates and patches.</td>
+            <td>Reduced the risk of exploitation by known vulnerabilities.</td>
+        </tr>
+        <tr>
+            <td>Incident Response</td>
+            <td>Handling security breaches efficiently.</td>
+            <td>Developed an incident response plan detailing actions for containment, eradication, recovery, and communication.</td>
+            <td>Ensured effective management of security incidents and quick resumption of normal operations.</td>
+        </tr>
+        <tr>
+            <td>Compliance</td>
+            <td>Adhering to relevant laws and standards.</td>
+            <td>Ensured compliance with regulations like GDPR and PCI DSS. Implemented necessary measures to manage data in accordance with legal obligations.</td>
+            <td>Protected the organization and its clients through regulatory compliance.</td>
+        </tr>
+    </tbody>
+</table>
 
 
 
@@ -733,115 +815,12 @@
 
 
       
-        <h2>UNIT EXERCISES</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
     
     <div class="unit" id="unit5">
-      <h1>Unit 5</h1>
-
-       <h2> Data Cleaning and Automating Data Collections</h2>
-
-<p>In Unit 5, "Data Cleaning and Automating Data Collections," we explored practical aspects of data cleaning using Python, focused on automating data collections, and discussed the considerations for cleaning data for organizational use.</p>
-
-<h2>Key Learning Outcomes</h2>
-
-<ol>
-    <li>
-        <span class="section-title">Data Cleaning with Python:</span>
-        <ul>
-            <li>Examine and apply data cleaning techniques using Python examples.</li>
-            <li>Create and convert data files to CSV format.</li>
-            <li>Scrape appropriate web pages for data collection.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Automation of Data Cleaning:</span>
-        <ul>
-            <li>Evaluate how Python scripts can automate the data cleaning process.</li>
-            <li>Understand how automation integrates machine learning strategies.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Database Representation and Architecture:</span>
-        <ul>
-            <li>Understand the use of database representation and architecture.</li>
-            <li>Explain data models as conceptual representations of data relationships.</li>
-        </ul>
-    </li>
-</ol>
-
-
-      <h2>Artifacts and Their Relation to Learning Outcomes</h2>
-
-<h3>Lecturecast and Reading Materials:</h3>
-<ul>
-    <li>Provided insights into data cleaning techniques and the importance of automation.</li>
-    <li>Emphasized critical outcomes for data design and the use of machine learning strategies.</li>
-</ul>
-
-<h3>Practical Exercises:</h3>
-<ul>
-    <li>Hands-on experience with data cleaning and web scraping using Python.</li>
-    <li>Exercises on automating data collection and cleaning processes.</li>
-</ul>
-
-<h2>Reading and Study Hours</h2>
-
-<h3>Primary Reading:</h3>
-<ul>
-    <li>
-        <span class="book-title">IBM Intellas (2016) Qradar and KAIF Integration Report</span>
-    </li>
-    <li>
-        <span class="book-title">Datanami (2019) Data Pipeline Automation: The Next Step Forward in DataOps</span>
-        <ul>
-            <li class="time">Time Spent: Approximately 4 hours for both articles.</li>
-        </ul>
-    </li>
-</ul>
-
-
-      <h2>Summary of Articles</h2>
-
-<h3>Data Pipeline Automation: The Next Step Forward in DataOps</h3>
-<p>From the Datanami article, I learned about the importance of automating data pipelines to streamline data engineering tasks. The article highlighted how tools like Kubeflow and Airflow help automate machine learning workflows, while new DataOps tools manage data pipelines. This automation increases agility, reduces errors, and enhances the productivity of data engineers, allowing them to handle large-scale data more effectively.</p>
-
-<h3>IBM Intellas: Qradar and KAIF Integration Report</h3>
-<p>The IBM Intellas report described the integration of KAIF and QRADAR for advanced data analysis and cyber security. The report detailed how KAIF's machine learning strategies enhance QRADAR's capabilities, providing real-time threat analysis and intelligence. The integration ensures a robust system for digital security and forensic analysis, essential for handling complex data sets and cyber threats.</p>
-
-
-
-
-
-      
-    
     
     </div>
     <div class="unit" id="unit6">
       
-
-
-
-
-    
-
-
-
-
-
     
     <div class="unit" id="unit7">
 
@@ -858,279 +837,15 @@
   <a href="assets/pdf/sql-quiz.pdf" target="_blank" class="btn btn-primary btn-custom">SQL QUIZ & Results</a>
 
     
-          
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     
     <div class="unit" id="unit8">
       <h1>Unit 8</h1>
-      <h2> Compliance and Regulatory Framework for Managing Data</h2>
-
-<p>In Unit 8, "Compliance and Regulatory Framework for Managing Data," we explored the compliance frameworks regarding data management, focusing on the rights of individuals and the obligations of organizations to stakeholders.</p>
-
-<h2>Key Learning Outcomes</h2>
-
-<ol>
-    <li>
-        <span class="section-title">Compliance Obligations:</span>
-        <ul>
-            <li>Analyse compliance obligations for data stakeholders.</li>
-            <li>Understand and apply applicable standards.</li>
-            <li>Examine existing regulatory frameworks and evaluate activities that require regulation.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Individual Rights:</span>
-        <ul>
-            <li>Examine rights accorded to individuals with respect to data usage.</li>
-            <li>Exercise rights with respect to data held about individuals, organizations, and stakeholders.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Regulatory Requirements:</span>
-        <ul>
-            <li>Understand regulatory requirements and obligations that come with data storage.</li>
-            <li>Introduce standards applicable to various organizations.</li>
-            <li>Evaluate best practices related to managing a database system.</li>
-        </ul>
-    </li>
-</ol>
-
-<h2>Artifacts and Their Relation to Learning Outcomes</h2>
-
-<h3>Lecturecast and Reading Materials:</h3>
-<ul>
-    <li>Provided insights into compliance obligations and standards ensuring compliance.</li>
-    <li>Explained how businesses must understand the implications arising from the use and storage of big data and the requirement for compliance.</li>
-</ul>
-
-<h3>Practical Exercises:</h3>
-<ul>
-    <li>Hands-on activities to apply compliant frameworks in different scenarios and understand regulatory requirements.</li>
-</ul>
-
-<h2>Reading and Study Hours</h2>
-
-<h3>Primary Reading:</h3>
-<ul>
-    <li>Williams, G. (2017) The Cybercitizen and Homeland Security.</li>
-    <li>Wired. (2020) What is GDPR? The summary guide to GDPR compliance in the UK.
-        <ul>
-            <li class="time">Time Spent: Approximately 3 hours for both articles.</li>
-        </ul>
-    </li>
-</ul>
-
-
-
-
-
-      
-          
-        <h2>Collaborative Discussion 2 (WEEK 1)- Comparing Compliance Laws</h2>
-      <h3>Discussion Topic</h3>
-      <p>In this discussion, we compared the GDPR's rules, particularly regarding the securing of personal data, with similar compliance laws in other countries or with the ICO in the UK. Only two students joined this discussion. More detailed information is available in the following link:</p>
-         
-      <a href="assets/pdf/big-data-initial-post-2.pdf" target="_blank" class="btn btn-primary btn-custom">Initial Post</a>
-      <a href="assets/pdf/big-data-peer-responses-2.pdf" target="_blank" class="btn btn-primary btn-custom">Peer Responses</a>
-
-
- <h2>DreamHome Property Management Case Study</h2>
-      <p>The seminar covered the DreamHome Property Management case study to illustrate how to establish a database project. We explored fact-finding techniques and documentation produced in the early stages of database development, including database planning, system definition, and requirements collection and analysis.</p>
-
-<h3>Key Points from the Seminar:</h3>
-<ul>
-    <li><strong>Business Information System Concepts:</strong> Importance of database design and how it can be decomposed into conceptual, logical, and physical phases.</li>
-    <li><strong>Fact-Finding Techniques:</strong> Commonly used techniques, their advantages, and disadvantages.</li>
-    <li><strong>DreamHome Database Example:</strong> Overview of the current system, planning phase contributions, system definition, and requirements capturing.</li>
-</ul>
-
-<p>More detailed information about the DreamHome case is provided in the following report:</p>
-
-
-      <a href="assets/pdf/big-data-dreamHome.pdf" target="_blank" class="btn btn-primary btn-custom">DreamHome Case</a>
-
-          
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        
-          
+     
     <div class="unit" id="unit9">
-      <h1>Unit 9</h1>
-      <h2> Database Management Systems (DBMS) and Models</h2>
+   
 
-<p>In Unit 9, "Database Management Systems (DBMS) and Models," we explored the foundational concepts and theories underlying various DBMS types, including flat files, relational databases, non-relational databases, data warehouses, clouds, Hadoop, and data lakes.</p>
-
-<h2>Key Learning Outcomes</h2>
-
-<ol>
-    <li>
-        <span class="section-title">DBMS Concepts and Theories:</span>
-        <ul>
-            <li>Evaluate design concepts and theories underpinning databases.</li>
-            <li>Understand the principles of database design and development.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">DBMS Strengths, Limitations, and Applications:</span>
-        <ul>
-            <li>Analyze the strengths and limitations of different DBMS.</li>
-            <li>Examine the relevance of database designs to various programming paradigms.</li>
-        </ul>
-    </li>
-    <li>
-        <span class="section-title">Practical Application:</span>
-        <ul>
-            <li>Develop the ability to implement a database management system.</li>
-            <li>Apply these concepts in designing applications that require large datasets.</li>
-            <li>Understand database security issues.</li>
-        </ul>
-    </li>
-</ol>
-
-<h2>Artifacts and Their Relation to Learning Outcomes</h2>
-
-<h3>Lecturecast and Reading Materials:</h3>
-<ul>
-    <li>Provided insights into the concepts and principles of database design.</li>
-    <li>Discussed the implementation of DBMS and the importance of database security.</li>
-</ul>
-
-<h3>Practical Exercises:</h3>
-<ul>
-    <li>Hands-on experience with storing data in a relational database using SQLite.</li>
-    <li>Exercises on setting up a local database with Python and saving cleaned datasets into the SQLite database.</li>
-</ul>
-
-<h2>Reading and Study Hours</h2>
-
-<h3>Primary Reading:</h3>
-<ul>
-    <li>Zoiner, T. (2024) Big Data Architectures.
-        <ul>
-            <li class="time">Time Spent: Approximately 1 hours.</li>
-        </ul>
-    </li>
-</ul>
-
-
-
-      
-          
-        <h3>Collaborative Discussion 2 (WEEK 2) - Comparing Compliance Laws</h3>
-      <h4>Discussion Topic</h4>
-      <p>Compare the rules of the GDPR - in particular, with relation to the securing of personal data rule, with either similar compliance laws within your country of residence, or with the ICO in the UK.
-
-The ICO refers to this rule as 'Security' and you should discuss your findings in relation to the standards set out and the exemptions that exist:</p>
-          <ul>
-          <li>'The securing personal data principle of the GDPR: Personal data shall be processed in a manner that ensures appropriate security of the personal data...' (ICO.org.uk).</li>
-          <ul>
-      <h4>Learning Outcomes</h4>
-      
-        <ul>
-        <li>Identify and manage challenges, security issues and risks, limitations, and opportunities in data wrangling.</li>
-        <ul>
-          
-      </ul>
-
-      <a href="assets/pdf/big-data-initial-post-2.pdf" target="_blank" class="btn btn-primary btn-custom">Initial Post</a>
-      <a href="assets/pdf/big-data-peer-responses-2.pdf" target="_blank" class="btn btn-primary btn-custom">Peer Responses</a>
-
-
-           <h3>Building a DBMS</h3>
-     <p>The seminar focused on building a DBMS using Python and SQLite. Key activities included:</p>
-
-<ul>
-    <li><strong>Installing SQLite and Setting Up a Relational Database with Python:</strong> Following instructions from the Kazil textbook.</li>
-    <li><strong>Saving the Cleaned UNICEF Dataset into the SQLite Database:</strong> Practical application of storing and managing data within SQLite.</li>
-</ul>
-
-<h3>Key Points from the Seminar:</h3>
-<ul>
-    <li><strong>Practical Application:</strong> Emphasis on using Python for data analysis and database management.</li>
-    <li><strong>Team Project Discussion:</strong> Opportunity to discuss progress on the team project and integrate feedback.</li>
-</ul>
-
-<p>More detailed information and the SQL code are provided in the following link:</p>
-
-      <a href="assets/code/dreamhome.sql" target="_blank" class="btn btn-primary btn-custom">DreamHome SQL</a>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
+        
     <div class="unit" id="unit10">
       <h1>Unit 10</h1>
 

@@ -80,7 +80,7 @@
     <div class="unit" id="unit1">
  
 
-      <h2>Collaborative Discussion Forum Summaries</h2>
+      <h2>Collaborative Discussion Forum Summaries - Unit 1-3 & 8-10</h2>
 
 <h3>Summary:</h3>
 <p>We examined the revolutionary possibilities of the Internet of Things (IoT) and the strict GDPR and ICO data protection laws in our collaborative discussion sessions. These talks brought to light the ways that IoT is affecting different industries as well as how crucial data protection is.</p>
@@ -151,7 +151,7 @@
 
 <p>Through exercises, our team developed solutions for processing datasets and solving complex problems in various environments, honing the skills necessary to be productive team members in a virtual professional environment. We critically analysed data wrangling problems and applied appropriate methodologies, tools, and techniques.</p>
 
-<h2>Team Exercise 1: Database Design for ABC Electronics</h2>
+<h2>Team Exercise 1: Database Design for ABC Electronics - Unit 6</h2>
 
 <h3>Summary:</h3>
 <p>For ABC Electronics, we created a logical database in the first exercise to improve data management and expedite procedures. The project required selecting an appropriate database management system (DBMS), putting in place a data management pipeline, and defining entities, characteristics, relationships, data types, and formats.</p>
@@ -255,7 +255,7 @@
           <p></p>
           <p></p>
 
-<h2>Team Exercise 2: DreamHome Property Management Case Study</h2>
+<h2>Team Exercise 2: DreamHome Property Management Case Study - Unit 8</h2>
 
 <h3>Summary:</h3>
 <p>The first stages of DreamHome Property Management's Database Development Lifecycle (DSDLC) were the subject of the second exercise. We used fact-finding methods, determined user requirements, and recorded the lifecycle phases to guarantee a methodical and thorough approach to creating a successful database system.</p>
@@ -344,7 +344,7 @@
 
   <h2>Formative, Wiki, and e-Portfolio Activities</h2>
 
-<h3>Task 1: Web Scraping</h3>
+<h3>Task 1: Web Scraping - Unit 3</h3>
 
 <h4>Objective:</h4>
 <p>Writing a Python web scraping script to collect Indeed.com job listings for the term "Data Scientist" and parse the resulting data into an XML file using the requests and beautifulsoup4 libraries was the task's goal.</p>
@@ -403,10 +403,127 @@
 
 
 
+<h3>Task 2: Data Cleaning and Processing - Unit 4</h3>
+
+<h4>Objective:</h4>
+<p>Using the human-readable headers from the mn_headers.csv file, the task's objective was to clean and preprocess the raw data in the mn.csv file in order to create a clean dataset for further analysis. This included renaming columns, handling missing values, and removing duplicate rows.<p>
+
+<h4>Table 7: Key Steps and Outcomes</h4>
+<table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Step</th>
+            <th>Description</th>
+            <th>Outcome</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Data Loading</td>
+            <td>Loaded data from mn.csv and mn_headers.csv using pandas</td>
+            <td>Data successfully loaded into DataFrames</td>
+        </tr>
+        <tr>
+            <td>Headers Dictionary</td>
+            <td>Created a mapping dictionary from mn_headers.csv</td>
+            <td>Facilitated renaming columns</td>
+        </tr>
+        <tr>
+            <td>Renaming Columns</td>
+            <td>Renamed columns using the headers dictionary</td>
+            <td>Improved readability and interpretability</td>
+        </tr>
+        <tr>
+            <td>Removing Duplicates</td>
+            <td>Used drop_duplicates method to remove duplicate rows</td>
+            <td>Ensured data integrity by eliminating redundant information</td>
+        </tr>
+        <tr>
+            <td>Checking for Missing Values</td>
+            <td>Checked for missing values using isnull().sum() method</td>
+            <td>Identified columns requiring further cleaning or imputation</td>
+        </tr>
+        <tr>
+            <td>Saving Cleaned Data</td>
+            <td>Saved cleaned data to a new CSV file</td>
+            <td>Cleaned dataset ready for further analysis</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Conclusion:</h4>
+<p>After the preprocessing and data cleaning were finished successfully, the dataset was cleaned and prepared for additional analysis. Accurate processing was secured by the methodical approach, and problems were handled with suitable technological fixes. The significance of thorough data cleaning procedures in data analysis is highlighted by this activity, laying the groundwork for dependable and perceptive outcomes.<p>
+
+  <p></p>
+  <p></p>
+       <a href="assets/code/big-data-data-cleaning-1.jpg" target="_blank" class="btn btn-primary btn-custom">Python code for Data Cleaning</a>
+        <a href="assets/pdf/Report%20on%20Data%20Cleaning%20and%20Processing%20Task.pdf" target="_blank" class="btn btn-primary btn-custom">Report: Data Cleaning</a>
+
+  <p></p>
+  <p></p>
+
+  <h3>Task 3: Writing Good Code and Documentation</h3>
+
+<h4>Objective:</h4>
+<p>This task's goal was to use the best practices for writing code to create a comprehensive script that included documentation for preprocessing and data cleaning on a dataset that was derived from UNICEF survey data.</p>
+
+<h4>Steps Taken:</h4>
+
+<table border="1" cellpadding="10" cellspacing="0">
+  <h4>Table 7: Steps Taken for Data Cleaning and Documentation</h4>
+
+    <thead>
+        <tr>
+            <th>Step</th>
+            <th>Description</th>
+            <th>Code Snippet / Outcome</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Data Loading</td>
+            <td>Loaded raw data from mn.csv and headers from mn_headers.csv into pandas DataFrames.</td>
+            <td><code>data = pd.read_csv('mn.csv', low_memory=False)</code><br>
+                <code>headers = pd.read_csv('mn_headers.csv')</code></td>
+        </tr>
+        <tr>
+            <td>Headers Dictionary</td>
+            <td>Created a dictionary mapping acronyms to their human-readable labels using pandas.</td>
+            <td><code>headers_dict = pd.Series(headers.Name.values, index=headers.Acronym).to_dict()</code></td>
+        </tr>
+        <tr>
+            <td>Renaming Columns</td>
+            <td>Renamed columns using the headers dictionary to transform cryptic headers into meaningful names.</td>
+            <td><code>data.rename(columns=headers_dict, inplace=True)</code></td>
+        </tr>
+        <tr>
+            <td>Removing Duplicates</td>
+            <td>Identified and removed duplicate rows using pandas' drop_duplicates method.</td>
+            <td><code>data.drop_duplicates(inplace=True)</code></td>
+        </tr>
+        <tr>
+            <td>Checking for Missing Values</td>
+            <td>Checked for missing values using the isnull().sum() method, identifying columns requiring further cleaning or imputation.</td>
+            <td><code>missing_values = data.isnull().sum()</code></td>
+        </tr>
+        <tr>
+            <td>Saving Cleaned Data</td>
+            <td>Saved the cleaned dataset to a SQLite database using the sqlite3 module, creating a suitable table structure and inserting the data.</td>
+            <td><code>conn = sqlite3.connect('cleaned_data.db')</code><br>
+                <code>data.to_sql('cleaned_data', conn, if_exists='replace', index=False)</code></td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Conclusion:</h4>
+<p>The data cleaning and preprocessing task was successfully completed, resulting in a cleaned dataset ready for further analysis. The systematic approach ensured accurate processing, with challenges effectively managed through appropriate technical solutions. This task highlights the importance of meticulous data cleaning practices in data analysis, laying a strong foundation for reliable and insightful results.</p>
 
 
 
 
+  
+
+  
 
 
 
